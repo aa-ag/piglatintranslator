@@ -13,8 +13,8 @@ def translate(request):
 
     for word in words:
         if word[0] not in 'aeiouAEIOU':
-            translation += word + '<-consonant '
+            translation += word[1:] + word[0] + 'yay '
         else:
-            translation += word + '<-vowel '
+            translation += word + 'yay '
 
     return HttpResponse(translation)
