@@ -17,4 +17,6 @@ def translate(request):
         else:
             translation += word + 'yay '
 
-    return HttpResponse(translation)
+    context = {'txt': txt, 'translation': translation}
+    
+    return render(request, 'translate.html', context)
