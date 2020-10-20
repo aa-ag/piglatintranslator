@@ -20,3 +20,6 @@ def translate(request):
     context = {'txt': txt, 'translation': translation}
     
     return render(request, 'translate.html', context)
+
+def about(request):
+    return render(request, 'about.html')
