@@ -2,16 +2,18 @@
 
 {% block content %}
 
-<h1>Django Pig Latin Translator</h1>
+<div class="container">
+    <h1>Django Pig Latin Translator</h1><br>
 
-<h3>Original text:</h3>
+    <h3>Original text:</h3>
 
-<p>{{ txt }} </p>
+    <p>{{ txt }} </p>
 
-<h3>Translated text:</h3>
+    <h3>Translated text:</h3>
 
-<p>{{ translation }}</p>
+    <p>{{ translation }}</p>
 
-<a href="{% url 'home' %}">New translation</a>
+    <a href="{% url 'home' %}" class="btn btn-primary">New translation</a>
+</div>
 
 {% endblock %}

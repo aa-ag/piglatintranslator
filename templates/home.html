@@ -2,14 +2,16 @@
 
 {% block content %}
 
-<h1>Django Pig Latin Translator</h1>
+<div class="container">
+    <h1>Django Pig Latin Translator</h1>
 
-<form action="{% url 'translate' %}">
-    <textarea type="text" name="originaltext" rows="5" cols="50" required></textarea>
-    <br>
-    <input type="submit" value="Translate!">
-</form>
+    <form action="{% url 'translate' %}">
+        <textarea type="text" name="originaltext" rows="5" cols="50" required></textarea>
+        <br>
+        <input type="submit" value="Translate!" class="btn btn-primary">
+    </form>
 
-<a href="{% url 'about' %}">About</a>
+    <a href="{% url 'about' %}" class="btn btn-secondary">About</a>
+</div>
 
 {% endblock %}
