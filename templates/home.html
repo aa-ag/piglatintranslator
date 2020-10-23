@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <h1>Django Pig Latin Translator</h1>
 
 <form action="{% url 'translate' %}">
@@ -7,3 +11,5 @@
 </form>
 
 <a href="{% url 'about' %}">About</a>
+
+{% endblock %}

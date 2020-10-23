@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <h1>Django Pig Latin Translator</h1>
 
 <h3>Original text:</h3>
@@ -9,3 +13,5 @@
 <p>{{ translation }}</p>
 
 <a href="{% url 'home' %}">New translation</a>
+
+{% endblock %}
