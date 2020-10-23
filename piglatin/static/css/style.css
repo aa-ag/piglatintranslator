@@ -3,7 +3,7 @@
     src: url(sansation_light.woff);
  }
  
- * {
+* {
     font-family: myFirstFont;
     padding: 8px;
 }
@@ -11,4 +11,9 @@
 .container {
     margin-top: 3vh;
     text-align: center;
+}
+
+textarea {
+    border-radius: 8px;
+    box-shadow: 2px 3px #8888885b;
 }
